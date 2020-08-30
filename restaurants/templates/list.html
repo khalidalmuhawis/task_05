@@ -6,11 +6,8 @@
     </head>
     <body>
         {% for restaurant in restaurants %}
-            <a href="#">
-                <ul>
-                    <li></li>
-                </ul>
-            </a>
+          <a href="restaurants/detail/<int:restaurant_id>">{{ restaurant.name }}</a>
+          <p>{{ restaurant.description }}</p>
         {% endfor %}
     </body>
 </html>
